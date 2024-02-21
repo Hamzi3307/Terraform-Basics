@@ -8,3 +8,4 @@ resource "local_file" "name" {
   content = "path.module: ${path.module}"
   filename = "./files/file.txt"
 }
+
