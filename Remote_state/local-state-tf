@@ -1,0 +1,10 @@
+# First, create a simple configuration to create a local_file
+#  resource within the directory called RemoteState. 
+# The resource block should be created inside the main.tf file. 
+#  Use file name using varaible interpolation
+resource "local_file" "state" {
+  content = "This configuration uses local state"
+  filename = "${path.module}/${var.local-state}"
+}
+
+# go to main.tf for using remote-state
